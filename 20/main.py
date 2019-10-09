@@ -23,7 +23,7 @@ class Solution:
                     return False
                 else:
                     stack.pop()
-        if len(stack) == 0
+        if len(stack) == 0:
             return True
         return False
 
