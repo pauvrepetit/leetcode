@@ -2,3 +2,4 @@
 *.out
 .vscode/
 *.code-workspace
+venv/
