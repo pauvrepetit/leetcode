@@ -1,5 +1,6 @@
 # 343. 整数拆分
 # 剑指 Offer 14- I. 剪绳子
+# 剑指 Offer 14- II. 剪绳子 II
 #
 # 20200802
 # huao
@@ -14,7 +15,7 @@ class Solution:
             base = n // i
             left = n % i
             maxMul = max(maxMul, base ** (i - left) * (base + 1) ** left)
-        return maxMul
+        return maxMul % 1000000007  # 对于剪绳子II 需要对maxMul进行取模
 
 
 sol = Solution()
