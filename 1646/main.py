@@ -5,6 +5,8 @@
 
 class Solution:
     def getMaximumGenerated(self, n: int) -> int:
+        if n == 0:
+            return 0
         nums = [0 for i in range(n + 1)]
         nums[1] = 1
         max_num = 1
